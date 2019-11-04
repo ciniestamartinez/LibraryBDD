@@ -18,9 +18,6 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('password');
-            $table->integer('id_lend');
-
-            $table->foreign('id_lend')->references('id')->on('lend');
             $table->timestamps();
         });
     }

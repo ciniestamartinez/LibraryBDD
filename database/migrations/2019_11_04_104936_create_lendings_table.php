@@ -14,9 +14,9 @@ class CreateLendingsTable extends Migration
     public function up()
     {
         Schema::create('lendings', function (Blueprint $table) {
-            $table->increments('id');
-            $table->date('date');
-            $table->dateTime('hour');
+            $table->primary(['id_user','id_book']);
+            $table->unsignedInteger('id_user');
+            $table->unsignedInteger('id_book');
             $table->timestamps();
         });
     }
