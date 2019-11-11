@@ -18,10 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('books', 'BookController');
-Route::GET('getBooks', 'BookController@getBooks');
-Route::POST('addBook', 'BookController@addBook');
 
 Route::apiResource('users', 'UserController');
-Route::GET('getUsers', 'UserController@getUsers');
-Route::POST('addUser', 'UserController@addUser');
+
 
