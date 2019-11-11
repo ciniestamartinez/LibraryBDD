@@ -10,7 +10,7 @@ class UserController extends Controller
 {
     
     public function getUsers(){
-        $users = Users::all();
+        $users = User::all();
         foreach ($users as $key => $user){
             print($user);
         }
